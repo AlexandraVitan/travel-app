@@ -1,10 +1,17 @@
-import Image from "next/image";
+import Camp from "@/components/Camp";
+import Features from "@/components/Features";
+import GetApp from "@/components/GetApp";
+import Guide from "@/components/Guide";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1 className="text-bold text-teal-500"> Hello </h1>
-      
-    </div>
-  );
+    <>
+    <Hero/>
+    <Camp/>
+    <Guide/>
+    <Features/>
+    <GetApp/>
+    </>
+  )
 }
